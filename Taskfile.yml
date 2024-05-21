@@ -6,13 +6,13 @@ tasks:
     cmds:
       - "python -m venv {{.VENV_FOLDER_NAME}}"
       - timeout 3
-      - "{{.VENV_FOLDER_NAME}}\\\\Scripts\pip install -r requirements.txt"
+      - "{{.VENV_FOLDER_NAME}}\\\\Scripts\\\\pip install -r requirements.txt"
     platforms:
       - windows
 
   run-tests:
     cmds:
-      - "{{.VENV_FOLDER_NAME}}\\\\Scripts\python tests.py"
+      - "{{.VENV_FOLDER_NAME}}\\\\Scripts\\\\python tests.py"
     platforms:
       - windows
     deps:
